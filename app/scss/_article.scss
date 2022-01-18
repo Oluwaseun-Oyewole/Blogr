@@ -1,0 +1,370 @@
+.article{
+    padding-top:7rem;
+    padding-bottom: 5rem;
+
+
+
+    @include breakpoint-down(large){
+        text-align: center;
+        padding-top:17rem;
+        padding-bottom: 3rem;
+
+    }
+
+    @include breakpoint-down(medium){
+        text-align: center;
+        padding-top:17rem;
+        padding-bottom: 3rem;
+
+    }
+
+
+    @include breakpoint-down(small){
+        padding-top:18rem;
+        padding-bottom: 5rem;
+
+    }
+
+    &__content{
+
+        display:flex;
+        gap:7rem;
+        
+        padding-left: 7rem;
+        padding-right: 8rem;
+        background: $veryDarkGrayBlue;
+        border-radius:0 90px 0 90px;
+        background-image: url('/images/bg-pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: top -43rem left -20rem ;
+
+
+
+        @include breakpoint-down(large){
+            border-radius: 0 100px 0 100px;
+            background-size: 130%;
+            background-position: top -15rem center;
+            padding:0;
+            display:block;
+        
+        }
+
+        @include breakpoint-down(small){
+
+            border-radius: 0 100px 0 100px;
+            background-size: 130%;
+            background-position: top -5rem center;
+            padding:0;
+            display:block;
+        }
+    }
+
+
+    &__images{
+        margin-top: -4.9rem;
+        margin-bottom: -7.5rem;
+
+
+        @include breakpoint-down(large){
+            >img{
+                margin-top: -10rem;
+                // width:50%;
+            }
+            padding:0;
+        
+        }
+
+        @include breakpoint-down(small){
+           
+            >img{
+                margin-top: -10rem;
+                width:100%;
+            }
+            padding:0;
+        }
+
+    }
+
+
+    &__text{
+        font-size:20px;
+        padding:6rem 0;
+        padding-right: 12rem;
+
+        @include breakpoint-down(large){
+            padding:0;
+            margin:0;
+            text-align: center;
+            padding: 5rem 10rem;
+        
+        }
+
+        @include breakpoint-down(medium){
+            padding:0;
+            margin:0;
+            text-align: center;
+            padding: 6rem 5rem;
+            padding-bottom: 10rem;
+        
+        }
+
+        @include breakpoint-down(small){
+            padding:0;
+            margin:0;
+            text-align: center;
+            padding: 10rem 2rem;
+            // padding-bottom: 10rem;
+        }
+
+
+        h2{
+            font-size: 2.7rem;
+            margin-bottom:2.5rem;
+            font-weight: 400;
+
+
+            @include breakpoint-down(large){
+                color:white;
+                line-height: 1.6;
+                font-size: 3.2rem;
+                font-weight:500;
+            }
+
+            @include breakpoint-down(small){
+                color:white;
+                line-height: 1.6;
+                font-size: 2.4rem;
+                font-weight:400;
+            }
+        }
+
+
+        >p{
+            line-height:1.7;
+            font-weight: 100;
+
+            @include breakpoint-down(large){
+                padding:0;
+                color:$white;
+                padding-left: 6.5rem;
+                padding-right:6.5rem;
+                font-size: 1.3rem;
+            
+            }
+
+            @include breakpoint-down(medium){
+                padding:0;
+                color:$white;
+                padding-left: 3rem;
+                padding-right:3rem;
+                font-size: 1.3rem;
+            
+            }
+
+            @include breakpoint-down(small){
+                padding:0;
+                color:$white;
+                font-size: 1.1rem;
+                line-height:1.9;
+            }
+        }
+    }
+
+
+}
+
+
+.article2{
+
+    padding-top: 5rem;
+    position: relative;
+    padding-right: 3rem;
+
+    @include breakpoint-down(large){
+        padding:0;
+        margin: 0;
+        text-align: center;
+    }
+
+    @include breakpoint-down(small){
+        margin: 0;
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+
+    &__content{
+        gap:6rem;
+
+        @include breakpoint-down(large){
+            display:block;
+            margin-top: 5rem;
+        }
+
+        @include breakpoint-down(small){
+            gap:0;
+            display:block;
+            margin-top: 5rem;
+        }
+        
+    }
+
+
+    &__image{
+            // width: 50%;
+            margin-left: -20.8rem;
+            width: 100%;
+            height: 100%;
+
+            >img{
+                width: 1200px;
+            }
+
+            @include breakpoint-down(large){
+                margin:0;
+                >img{
+                    padding:0;
+                    margin:0;
+
+                    width:1000px;
+                }
+            }
+
+
+            @include breakpoint-down(medium){
+                margin:0;
+                margin-top: -4rem;
+                text-align: center;
+                >img{
+                    padding:0;
+                    margin:0;
+
+                    width:700px;
+                }
+            }
+
+
+            @include breakpoint-down(small){
+                margin-top:-6rem;
+                text-align: center;
+
+                >img{
+                    padding:0;
+                    margin:0;
+                    width:400px;
+                }
+            }
+    }
+    
+
+    &__text{
+
+        margin-top: -3rem;
+        padding-right:10rem;
+        
+
+        @include breakpoint-down(large){
+            padding:0;
+            margin:0;
+            text-align: center;
+            margin-top: 3rem;
+            padding-left: 7rem;
+            padding-right: 7rem;
+        }
+
+
+        @include breakpoint-down(medium){
+            padding:0;
+            margin:0;
+            text-align: center;
+            margin-top: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        @include breakpoint-down(small){
+            padding:0;
+            margin:0;
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+
+        >div:first-child{
+            margin-bottom: 3rem;
+
+            h2{
+                margin-bottom: 1rem;
+                font-size:2.7rem;
+                font-weight: 300;
+                color: $veryDarkBlueHeading;
+
+                @include breakpoint-down(medium){
+                    margin-bottom: 3rem;
+                 }
+
+                @include breakpoint-down(small){
+                    font-size:1.6rem;
+                    font-weight: 500;
+                   margin-bottom: 2.5rem;
+                }
+            }
+
+            p{
+                margin-top: 2.5rem;
+                line-height: 1.7;
+                font-size: 1.4rem;
+                color: $veryDarkBlueHeading;
+                font-weight: 300;
+                color:grey;
+
+                @include breakpoint-down(large){
+                    margin-bottom: 3rem;
+                    line-height: 2;
+                }
+
+
+                @include breakpoint-down(small){
+                    font-size:1.3rem;
+                    margin-bottom: 2rem;
+                    line-height: 1.6;
+
+                    font-weight:400;
+                }
+            }
+        }
+
+
+        >div:last-child{
+            margin-bottom: 3rem;
+
+            h2{
+                font-size:2.7rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+                color: $veryDarkBlueHeading;
+
+                @include breakpoint-down(small){
+                    font-size:1.6rem;
+                    font-weight: 500;
+                }
+            }
+
+
+            p{
+                margin-top: 2.5rem;
+                line-height: 1.7;
+                font-size: 1.4rem;
+                color: $veryDarkBlueHeading;
+                font-weight: 300;
+                color:gray;
+            }
+        }
+    }
+
+
+}

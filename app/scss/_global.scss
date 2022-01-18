@@ -17,6 +17,7 @@ body{
         &.noscroll{
             overflow: hidden;
         }
+        min-height: 500vh;;
  
 }
 
@@ -70,6 +71,7 @@ body{
  @include breakpoint-down(small){
      background:$white;
  }
+
 
  &__center{
      text-align: center;

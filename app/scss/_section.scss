@@ -31,23 +31,28 @@
    
     &__content{
         padding-left: 8rem;
+        display:flex;
+        gap: 5rem;
 
 
         @include breakpoint-down(large){
+                gap:0;
                 text-align: center;
-                margin-top: 3rem;
+                margin-top: 4rem;
                 display:flex;
                 flex-direction: column;
                 padding-left: 0;
         }    
         
+        
         >div:first-child{
 
-            padding-top:9rem;
+            padding-top:11rem;
             margin-bottom: 2rem;
             padding-left: 2rem;
 
             @include breakpoint-down(large){
+                padding-top:5rem;
                 text-align: center;
                 order: 2;
                 padding-left: 5rem;
@@ -101,7 +106,7 @@
                 font-size: 1.4rem;
                 color: $veryDarkBlueHeading;
                 font-weight:400;
-                width: 75%;
+                width: 100%;
 
                 color: gray;
 
@@ -130,6 +135,8 @@
 
             @include breakpoint-down(large){
                 >img{
+                    padding:0;
+                    margin:0;
                     width: 800px;
                     margin-left: -1.9rem;
                 }
@@ -152,7 +159,4 @@
         }
 
     }
-
-  
-
 }
