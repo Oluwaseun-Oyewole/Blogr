@@ -593,6 +593,15 @@ body.noscroll {
   background: linear-gradient(to left, #c59587, #ff3d54);
 }
 
+.header__mobilenav ul > li:nth-child(3) {
+  border-bottom: 1px #c6c6c8 solid;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
 .header .overlay {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(transparent));

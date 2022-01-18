@@ -408,11 +408,20 @@
             }
         }
 
+
+        ul > li:nth-child(3){
+            border-bottom: 1px $grayishFooterText solid;
+            width:80%;
+
+            position: relative;
+            left: 50%;
+            transform:translate(-50%)
+        }
+
     }
 
 
-    .overlay{
-       
+    .overlay{   
 
         opacity: 0;    
         background: linear-gradient($veryDarkGrayBlue, transparent);
