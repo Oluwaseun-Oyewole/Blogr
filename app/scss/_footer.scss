@@ -14,6 +14,12 @@
         }
 
 
+        // @include breakpoint-down(medium){
+        //     grid-template-columns: 2fr 2fr 2fr 2fr;
+        //     grid-gap: 1rem;
+        // }
+
+
         @include breakpoint-down(small){
             border-radius: 0 100px 0 0;
             display:block;
@@ -37,6 +43,7 @@
                 @include breakpoint-down(small){
                     margin-bottom: 3rem;
                     font-weight: 200;
+                    font-size:1.8rem;
                     
                 }
             }
@@ -47,7 +54,7 @@
                 color:$grayishFooterText;
 
                 @include breakpoint-down(small){
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                 }
 
                 &:hover{
@@ -73,12 +80,6 @@
 
     }
 
-    &__link:first-child{
-        > div{
-            margin-bottom: 2rem;
-            background:red;
-        }
-    }
 
 
     &__logo{
