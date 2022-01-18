@@ -3,6 +3,7 @@ const hambuggerBtn = document.querySelector('.hambuggerBtn > img')
 const fadeElems = document.querySelectorAll('.has-fade')
 const overlay = document.querySelector('.overlay')
 const ul = document.querySelector('.ul')
+body = document.querySelector('body')
 
 
 
@@ -15,6 +16,7 @@ hambuggerBtn.addEventListener('click', () => {
         overlay.classList.add('fade-out')
         ul.classList.remove('slide-in')
         ul.classList.add('slide-out')
+        body.classList.remove('noscroll')
     }
 
     else{
@@ -23,6 +25,7 @@ hambuggerBtn.addEventListener('click', () => {
         overlay.classList.add('fade-in')
         ul.classList.add('slide-in')
         ul.classList.remove('slide-out')
+        body.classList.add('noscroll')
         
 
 
