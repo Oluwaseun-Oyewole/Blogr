@@ -1,0 +1,104 @@
+html{
+    box-sizing:border-box;
+    font-size:100%;
+}
+
+*, *::after, *::before{
+    box-sizing:inherit;
+    padding:0;
+    margin:0;
+}
+
+
+body{
+ font-family: 'Ubuntu', sans-serif; 
+ color:white;
+ 
+}
+
+.flex{
+ display: flex;
+
+ &-fd-c{
+     flex-direction: column;
+ }
+
+ &-jc-sb{
+     justify-content: space-between;
+ }
+
+ &-jc-sa{
+     justify-content: space-around;
+ }
+
+ &-jc-se{
+     justify-content : space-evenly;
+ }
+
+ &-jc-c{
+     justify-content:center;
+ }
+
+ &-ai-c{
+     align-items: center;
+ }
+
+ &-fd-c{
+     flex-direction: column;
+ }
+
+}
+
+.grid{
+ display:grid;
+ grid-template-columns: repeat(4, 1fr);
+ align-items: start;
+ justify-content:center;
+}
+
+.container{
+ overflow: hidden;
+ width: 100%;
+ max-width: 1700px;
+ margin: 0 auto; 
+ background: rgb(247, 242, 242);
+
+ &__center{
+     text-align: center;
+ }
+
+ &__pl{
+     padding-left: 3rem;
+ }
+
+ &__pr{
+     padding-right: 3rem;
+ }
+
+ &__pt{
+     padding-top: 3rem;
+ }
+}
+
+
+*, a:visited, a:hover{
+ text-decoration: none;
+}
+
+
+.hide-for-mobile{
+ // hide for tablets and mobile
+ @include breakpoint-down(medium){
+     display:none;
+ }
+}
+
+
+
+.hide-for-desktop{
+ @include breakpoint-up(large){
+     display:none;
+ }
+}  
+
+

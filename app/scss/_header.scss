@@ -1,0 +1,426 @@
+.header{
+
+
+    nav{
+        background:$lightRed;
+        padding-top: 4rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        border-radius: 0 0 0 100px;
+
+
+        background: $lightRed;
+        border-radius: 0 0 0 80px;
+        background-image: url('/images/bg-pattern-intro-desktop.svg');
+
+        background-repeat: no-repeat;
+        background-size:245%;
+        background-position: top -107rem right
+         -107rem;
+
+         
+
+        @include breakpoint-down(large){
+            padding-left:3rem;
+           padding-right: 3rem;
+           
+           background-size:245%;
+           background-position: top -65rem right
+           -70rem;
+        }
+
+        @include breakpoint-down(medium){
+           padding-left:4rem;
+           padding-right: 4rem;
+
+           background-size:245%;
+           background-position: top -40rem right
+           -45rem;
+
+        }
+
+
+        @include breakpoint-down(small){
+            padding-left:2rem;
+            padding-right: 2rem;
+            border-radius: 0 0 0 150px;
+            background-size:450%;
+            background-position: top -20rem right
+             -48rem;
+         }
+ 
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    &__navigation{
+        
+        .logo{
+            width: 140px;
+        }
+
+
+        .links{
+            margin-left: 4rem;
+
+
+
+            >li{
+                position: relative;
+                margin-left: 1.5rem;
+
+                >a{
+
+                    font-size:1.7rem;
+                    color:$white;
+                    font-weight: 500;
+
+                }
+
+                >img{
+                    width: 17px;
+                }
+
+                >.dropdown-menu > ul > li{
+                    // background: yellow;
+                }
+
+
+                >.dropdown-menu {
+                    display: none;
+                    transition: .5s;
+                    z-index: 0;
+                }
+
+                >.dropdown-menu > ul{
+                    background: white;;
+                    position: absolute;
+
+                    margin-top: 1rem;
+                    margin-left: -4rem;
+                    background: $white;
+                    padding: 1.5rem 2rem;
+                    text-align: left;
+                    border-radius: 5px;
+                    box-shadow: 0 0 15px 3px rgba(0,0,0,.3);
+
+                    > li{
+                        font-size: 30px;
+                        padding: 1rem 3rem;
+                        
+
+                       > a{
+                        color:$grayishFooterText;
+                        &:hover{
+                            
+                            color: $veryDarkBlueHeading;
+                            transition: all 400ms ease-in-out;
+                        }
+                       }
+                    }
+
+        
+                }
+
+                
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                   
+                    img{
+                        transform:rotate(180deg);
+                        transition:all 400ms ease-in-out;
+                    }
+
+                    >.dropdown-menu{
+                        display:block;
+                        z-index: 1;
+                    }
+                }
+
+                
+
+
+               
+
+
+             
+            }
+
+ 
+
+
+        }
+
+    }
+
+    &__registration{
+
+        li{
+            >a{
+                margin-left:2rem;
+                font-size:20.5px;
+                color: white;
+                
+            }
+
+            
+        }
+
+        li:first-child{
+            >a{
+                font-size: 26px;
+                font-weight: 700;
+                
+            }
+        }
+
+        li:last-child{
+            >a{
+                background:$white;
+                color: $lightRedCTA;
+                padding: 1rem 2.3rem;
+                border-radius: 2rem;
+                font-weight: 900;
+                text-transform: capitalize;
+                transition: all 500ms ease-in-out;
+
+                
+                &:hover{
+                    background:$veryLightRedCTAHoverBackground;
+                    color: $white;
+                    
+                }
+            }
+        }
+
+    }
+
+    &__content{
+        padding-top: 11.75rem;
+        padding-bottom: 13.75rem;
+
+
+        @include breakpoint-down(medium){
+            padding-top:7rem;
+            padding-bottom: 11.5rem;
+         }
+
+        @include breakpoint-down(small){
+            padding-top:8rem;
+            padding-bottom: 12.5rem;
+         }
+
+        h1{
+            font-size: 4.3rem;
+            padding-bottom: 2.75rem;
+
+            @include breakpoint-down(small){
+                font-size:3rem;
+                line-height: 1.3;
+             }
+        }
+
+        p{
+            color:$grayishFooterText;
+            padding-bottom: 2.7rem;
+            font-size: 1.8rem;
+            color:$white;
+
+            @include breakpoint-down(small){
+                font-size:1.5rem;
+             }
+        }
+    }
+
+    &__buttons{
+          
+        @include breakpoint-down(small){
+        }
+
+        .free{
+            cursor: pointer;
+            background:$white;
+            color: $lightRedCTA;
+            padding: 1.3rem 2rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            border:none;
+            // outline: none;
+            font-size:1.3rem;
+
+            transition: all 500ms ease-in-out;
+
+            @include breakpoint-down(small){
+                padding: 1.3rem 2rem;
+                font-size:15px;
+            }
+
+    
+
+            &:hover{
+                background:$veryLightRedCTAHoverBackground;
+                color: $white;
+            }
+        }
+
+        .learn{
+            cursor: pointer;
+            margin-left: 1rem;
+            background: transparent;
+            padding: 1.3rem 2rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            // outline: none;
+            border: 1px $white solid;
+            font-size:1.3rem;
+            color:$white;
+
+            transition: all 500ms ease-in-out;
+
+            @include breakpoint-down(small){
+                padding: 1rem 0.7rem;
+                font-size:15px;
+            }
+
+
+            &:hover{
+                background:$white;
+                color: $lightRed;
+            }
+
+        }
+    }
+
+    &__mobile-menu{
+
+        >img{
+            width: 48px;
+        }
+    }
+
+    &__mobilenav{
+
+
+        > ul{
+            
+            opacity: 0;        
+
+            position:absolute;
+            background: $white;
+            left:50%;
+            transform: translateX(-50%);
+            top: 18%;
+            width: 80%;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 2rem;
+            box-shadow: 0 0 30px 3px rgba(0,0,0,0.5);
+            border: none;
+            outline: 0;
+
+
+
+        }
+
+
+        ul > li{
+
+            padding:2rem;
+            font-size:37px;
+            font-size: 1.5rem;
+            
+            >div > a{
+                color: $veryDarkBlueHeading;
+            }
+            >div >img{
+                width: 16px;
+                margin-left: 4px;
+                margin-top: 10px;;
+            }
+
+        > a{
+            color: $veryDarkBlueHeading;
+        }
+            
+        
+        }
+
+        ul > li > div:last-child{
+            background: $mobilenav;
+            padding: 1.5rem 0;
+            width: 100%;
+            border-radius: 8px;
+            display: none;
+            transition: 2s;
+
+             > ul> li > a{
+                font-size: 23px;
+
+                &:hover{
+                    color: $grayishFooterText;
+                }
+            }
+        }
+
+
+        ul >li:hover{
+
+            >div>img{
+                transform:rotate(180deg);
+                transition: all 400ms ease-in-out;
+            }
+            
+
+            >div:last-child{
+                display: block;
+            }
+            
+        }
+
+        .signup{
+            padding-bottom: 5rem;
+            > a{
+                cursor: pointer;
+                background:linear-gradient(to right, $veryLightRed, $lightRed);
+                color: $white;
+                padding:1.4rem 4rem;
+                border-radius: 2rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                border:none;
+                border-radius: 2rem;
+                font-size: 1rem;
+
+    
+                transition: all 500ms ease-in-out;
+
+                &:hover{
+                    background:linear-gradient(to left, $veryLightRed, $lightRed);
+                }
+
+            }
+        }
+
+    }
+
+
+    .overlay{
+
+        opacity: 0;    
+        background: linear-gradient($veryDarkGrayBlue, transparent);
+        position: fixed;
+        top: 14%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+
+    margin-top: -1.9rem;
+    
+}

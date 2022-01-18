@@ -1,0 +1,92 @@
+@keyframes slide-in {
+    from{
+        display:none;
+        opacity: 0;
+        left: -50rem;    
+    }
+
+
+    to{
+        display: block;
+        opacity: 1;    
+    }
+
+
+}
+
+.slide-in{
+    animation: slide-in 800ms ease-in-out forwards;
+}
+
+
+
+@keyframes slide-out {
+    from{
+        display:block;
+        opacity: 1;
+    }
+
+
+
+    to{
+        display: none;
+        opacity: 0;
+        left: -50rem;  
+    }
+}
+
+
+.slide-out{
+    animation: slide-out 400ms ease-in-out forwards;
+}
+
+
+.has-fade{
+    display: none;
+    opacity:0;
+}
+
+
+
+@keyframes fade-in {
+
+    from{
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+
+     
+ }
+
+ .fade-in{
+    animation: fade-in 1s ease-in-out forwards;
+ }
+
+ 
+ @keyframes fade-out {
+
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+     
+ }
+
+ .fade-out{
+    @include breakpoint-down(medium){
+        animation: fade-out 1s ease-in-out forwards;
+    }
+ }
