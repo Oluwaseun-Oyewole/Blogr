@@ -85,7 +85,7 @@ body.noscroll {
 .container {
   overflow: hidden;
   width: 100%;
-  max-width: 1700px;
+  max-width: 1350px;
   margin: 0 auto;
   background: #f7f2f2;
 }
@@ -256,13 +256,11 @@ body.noscroll {
   padding-top: 4rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  border-radius: 0 0 0 100px;
-  background: #ff3d54;
   border-radius: 0 0 0 80px;
   background-image: url("/images/bg-pattern-intro-desktop.svg");
   background-repeat: no-repeat;
-  background-size: 245%;
-  background-position: top -107rem right -107rem;
+  background-size: 200%;
+  background-position: top -68rem right -64rem;
 }
 
 @media (max-width: 87.4375em) {
@@ -297,23 +295,19 @@ body.noscroll {
   list-style: none;
 }
 
-.header__navigation .logo {
-  width: 140px;
-}
-
 .header__navigation .links {
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .header__navigation .links > li {
   position: relative;
-  margin-left: 1.5rem;
 }
 
 .header__navigation .links > li > a {
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: white;
   font-weight: 500;
+  margin-left: 2.5rem;
 }
 
 .header__navigation .links > li > img {
@@ -328,12 +322,11 @@ body.noscroll {
 }
 
 .header__navigation .links > li > .dropdown-menu > ul {
-  background: white;
   position: absolute;
   margin-top: 1rem;
   margin-left: -4rem;
   background: white;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   text-align: left;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
@@ -341,7 +334,7 @@ body.noscroll {
 }
 
 .header__navigation .links > li > .dropdown-menu > ul > li {
-  font-size: 30px;
+  font-size: 1rem;
   padding: 1rem 3rem;
 }
 
@@ -351,8 +344,6 @@ body.noscroll {
 
 .header__navigation .links > li > .dropdown-menu > ul > li > a:hover {
   color: #1f3f5b;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
 }
 
 .header__navigation .links > li:hover {
@@ -374,19 +365,19 @@ body.noscroll {
 
 .header__registration li > a {
   margin-left: 2rem;
-  font-size: 20.5px;
+  font-size: 0.7rem;
   color: white;
 }
 
 .header__registration li:first-child > a {
-  font-size: 26px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .header__registration li:last-child > a {
   background: white;
   color: #ff525d;
-  padding: 1rem 2.3rem;
+  padding: 0.8rem 2rem;
   border-radius: 2rem;
   font-weight: 900;
   text-transform: capitalize;
@@ -419,21 +410,21 @@ body.noscroll {
 }
 
 .header__content h1 {
-  font-size: 4.3rem;
-  padding-bottom: 2.75rem;
+  font-size: 3.5rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (max-width: 57.5em) {
   .header__content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.3;
   }
 }
 
 .header__content p {
   color: #c6c6c8;
-  padding-bottom: 2.7rem;
-  font-size: 1.8rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -447,12 +438,12 @@ body.noscroll {
   cursor: pointer;
   background: white;
   color: #ff525d;
-  padding: 1.3rem 2rem;
+  padding: 1rem 1.7rem;
   border-radius: 2rem;
   font-weight: 700;
   text-transform: capitalize;
   border: none;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -473,12 +464,12 @@ body.noscroll {
   cursor: pointer;
   margin-left: 1rem;
   background: transparent;
-  padding: 1.3rem 2rem;
+  padding: 1rem 1.7rem;
   border-radius: 2rem;
   font-weight: 700;
   text-transform: capitalize;
   border: 1px white solid;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   color: white;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
@@ -507,7 +498,7 @@ body.noscroll {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 18%;
+  top: 17%;
   width: 80%;
   text-align: center;
   border-radius: 8px;
@@ -519,9 +510,9 @@ body.noscroll {
 }
 
 .header__mobilenav ul > li {
-  padding: 2rem;
+  padding: 1.7rem;
   font-size: 37px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .header__mobilenav ul > li > div > a {
@@ -549,7 +540,7 @@ body.noscroll {
 }
 
 .header__mobilenav ul > li > div:last-child > ul > li > a {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .header__mobilenav ul > li > div:last-child > ul > li > a:hover {
@@ -606,7 +597,7 @@ body.noscroll {
   background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(transparent));
   background: linear-gradient(#2c2d3f, transparent);
   position: fixed;
-  top: 14%;
+  top: 15%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -614,7 +605,8 @@ body.noscroll {
 
 .section {
   position: relative;
-  padding-top: 9.875rem;
+  padding-top: 7.875rem;
+  font-family: 'Overpass', sans-serif;
 }
 
 @media (max-width: 85.9375em) {
@@ -643,9 +635,10 @@ body.noscroll {
 
 @media (max-width: 57.5em) {
   .section__header {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     padding-left: 1.7rem;
     padding-right: 1.7rem;
+    font-weight: 700;
   }
 }
 
@@ -674,9 +667,12 @@ body.noscroll {
 }
 
 .section__content > div:first-child {
-  padding-top: 11rem;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-top: 8rem;
   margin-bottom: 2rem;
   padding-left: 2rem;
+  font-family: 'Overpass', sans-serif;
 }
 
 @media (max-width: 87.4375em) {
@@ -720,34 +716,28 @@ body.noscroll {
 }
 
 .section__content > div:first-child h2 {
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   color: #1f3f5b;
-  padding-bottom: 1.5rem;
-  font-weight: 400;
-}
-
-@media (max-width: 87.4375em) {
-  .section__content > div:first-child h2 {
-    font-size: 2.8rem;
-  }
+  padding-bottom: 1.3rem;
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
 }
 
 @media (max-width: 57.5em) {
   .section__content > div:first-child h2 {
     line-height: 1.3;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.1rem;
+    font-weight: 600;
   }
 }
 
 .section__content > div:first-child p {
-  margin-top: 0.5rem;
-  line-height: 1.7;
-  font-size: 1.4rem;
-  color: #1f3f5b;
-  font-weight: 400;
+  line-height: 2;
+  font-size: 0.9rem;
+  color: #3f4164;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
   width: 100%;
-  color: gray;
 }
 
 @media (max-width: 87.4375em) {
@@ -758,29 +748,25 @@ body.noscroll {
 
 @media (max-width: 57.5em) {
   .section__content > div:first-child p {
-    line-height: 1.6;
-    font-size: 1.3rem;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: grey;
   }
 }
 
 .section__content > div:last-child {
-  width: 100%;
   height: 100%;
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
 }
 
 .section__content > div:last-child > img {
-  width: 1200px;
-  margin-top: -7rem;
-  margin-right: -22rem;
-}
-
-@media (max-width: 87.4375em) {
-  .section__content > div:last-child > img {
-    padding: 0;
-    margin: 0;
-    width: 800px;
-    margin-left: -1.9rem;
-  }
+  width: 900px;
+  margin-top: -7.5rem;
+  margin-right: -39rem;
+  position: relative;
+  left: 2%;
 }
 
 @media (max-width: 85.9375em) {
@@ -793,13 +779,15 @@ body.noscroll {
 @media (max-width: 57.5em) {
   .section__content > div:last-child > img {
     width: 420px;
-    margin-left: -1.2rem;
+    margin-right: 0;
+    margin-top: -1rem;
   }
 }
 
 .article {
   padding-top: 7rem;
   padding-bottom: 5rem;
+  font-family: 'Overpass', sans-serif;
 }
 
 @media (max-width: 87.4375em) {
@@ -829,15 +817,15 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7rem;
+  gap: 3rem;
   padding-left: 7rem;
   padding-right: 8rem;
   background: #2c2d3f;
   border-radius: 0 90px 0 90px;
   background-image: url("/images/bg-pattern-circles.svg");
   background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: top -43rem left -20rem;
+  background-size: 80%;
+  background-position: top -35rem left -20rem;
 }
 
 @media (max-width: 87.4375em) {
@@ -861,16 +849,14 @@ body.noscroll {
 }
 
 .article__images {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin-top: -4.9rem;
-  margin-bottom: -7.5rem;
 }
 
 @media (max-width: 87.4375em) {
   .article__images {
     padding: 0;
-  }
-  .article__images > img {
-    margin-top: -10rem;
   }
 }
 
@@ -885,9 +871,9 @@ body.noscroll {
 }
 
 .article__text {
-  font-size: 20px;
-  padding: 6rem 0;
-  padding-right: 12rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font: size 1rem;
 }
 
 @media (max-width: 87.4375em) {
@@ -895,7 +881,6 @@ body.noscroll {
     padding: 0;
     margin: 0;
     text-align: center;
-    padding: 5rem 10rem;
   }
 }
 
@@ -914,13 +899,13 @@ body.noscroll {
     padding: 0;
     margin: 0;
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
   }
 }
 
 .article__text h2 {
-  font-size: 2.7rem;
-  margin-bottom: 2.5rem;
+  font-size: 2.3rem;
+  margin-bottom: 1.4rem;
   font-weight: 400;
 }
 
@@ -938,13 +923,14 @@ body.noscroll {
     color: white;
     line-height: 1.6;
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 600;
   }
 }
 
 .article__text > p {
   line-height: 1.7;
   font-weight: 100;
+  font-family: 'Overpass', sans-serif;
 }
 
 @media (max-width: 87.4375em) {
@@ -971,15 +957,17 @@ body.noscroll {
   .article__text > p {
     padding: 0;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.27rem;
+    letter-spacing: 0.1px;
     line-height: 1.9;
+    color: #ede9e9;
   }
 }
 
 .article2 {
-  padding-top: 5rem;
   position: relative;
   padding-right: 3rem;
+  font-family: 'Overpass', sans-serif;
 }
 
 @media (max-width: 87.4375em) {
@@ -999,10 +987,6 @@ body.noscroll {
   }
 }
 
-.article2__content {
-  gap: 6rem;
-}
-
 @media (max-width: 87.4375em) {
   .article2__content {
     display: block;
@@ -1019,13 +1003,15 @@ body.noscroll {
 }
 
 .article2__image {
-  margin-left: -20.8rem;
+  margin-left: -14.8rem;
   width: 100%;
   height: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .article2__image > img {
-  width: 1200px;
+  width: 800px;
 }
 
 @media (max-width: 87.4375em) {
@@ -1065,8 +1051,10 @@ body.noscroll {
 }
 
 .article2__text {
-  margin-top: -3rem;
+  margin-top: 3rem;
   padding-right: 10rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 @media (max-width: 87.4375em) {
@@ -1103,14 +1091,14 @@ body.noscroll {
 }
 
 .article2__text > div:first-child {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .article2__text > div:first-child h2 {
-  margin-bottom: 1rem;
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #1f3f5b;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 85.9375em) {
@@ -1128,11 +1116,11 @@ body.noscroll {
 }
 
 .article2__text > div:first-child p {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   line-height: 1.7;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   color: #1f3f5b;
-  font-weight: 300;
+  font-weight: 600;
   color: grey;
 }
 
@@ -1148,19 +1136,21 @@ body.noscroll {
     font-size: 1.3rem;
     margin-bottom: 2rem;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 500;
+    color: grey;
   }
 }
 
 .article2__text > div:last-child {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .article2__text > div:last-child h2 {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   font-weight: 300;
   margin-bottom: 1rem;
   color: #1f3f5b;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 57.5em) {
@@ -1171,16 +1161,20 @@ body.noscroll {
 }
 
 .article2__text > div:last-child p {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   line-height: 1.7;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #1f3f5b;
-  font-weight: 300;
   color: gray;
+  font-weight: 500;
+}
+
+.footer {
+  font-family: 'Overpass', sans-serif;
 }
 
 .footer__contain {
-  margin-top: 7rem;
+  margin-top: 5rem;
   padding-top: 7rem;
   padding-bottom: 2rem;
   padding-left: 8rem;
@@ -1207,8 +1201,8 @@ body.noscroll {
 }
 
 .footer__link > div > h3 {
-  margin-bottom: 4rem;
-  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 87.4375em) {
@@ -1226,14 +1220,14 @@ body.noscroll {
 }
 
 .footer__link > div a {
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   color: #c6c6c8;
 }
 
 @media (max-width: 57.5em) {
   .footer__link > div a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1266,7 +1260,6 @@ body.noscroll {
 }
 
 .footer__logo img {
-  width: 130px;
   margin-top: -0.7rem;
 }
 

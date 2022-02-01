@@ -1,7 +1,7 @@
 .article{
     padding-top:7rem;
     padding-bottom: 5rem;
-
+    font-family: 'Overpass', sans-serif;
 
 
     @include breakpoint-down(large){
@@ -28,7 +28,7 @@
     &__content{
 
         display:flex;
-        gap:7rem;
+        gap:3rem;
         
         padding-left: 7rem;
         padding-right: 8rem;
@@ -36,8 +36,8 @@
         border-radius:0 90px 0 90px;
         background-image: url('/images/bg-pattern-circles.svg');
         background-repeat: no-repeat;
-        background-size: 70%;
-        background-position: top -43rem left -20rem ;
+        background-size: 80%;
+        background-position: top -35rem left -20rem ;
 
 
 
@@ -62,14 +62,14 @@
 
 
     &__images{
+        flex-basis:50%;
         margin-top: -4.9rem;
-        margin-bottom: -7.5rem;
+
 
 
         @include breakpoint-down(large){
             >img{
-                margin-top: -10rem;
-                // width:50%;
+                // margin-top: -10rem;
             }
             padding:0;
         
@@ -88,15 +88,15 @@
 
 
     &__text{
-        font-size:20px;
-        padding:6rem 0;
-        padding-right: 12rem;
+        flex-basis:50%;
+        font: size 1rem;
+
 
         @include breakpoint-down(large){
             padding:0;
             margin:0;
             text-align: center;
-            padding: 5rem 10rem;
+            // padding: 5rem 10rem;
         
         }
 
@@ -113,14 +113,15 @@
             padding:0;
             margin:0;
             text-align: center;
-            padding: 10rem 2rem;
-            // padding-bottom: 10rem;
+            padding: 5rem 2rem;
+            
+
         }
 
 
         h2{
-            font-size: 2.7rem;
-            margin-bottom:2.5rem;
+            font-size: 2.3rem;
+            margin-bottom:1.4rem;
             font-weight: 400;
 
 
@@ -135,7 +136,7 @@
                 color:white;
                 line-height: 1.6;
                 font-size: 2.4rem;
-                font-weight:400;
+                font-weight:600;
             }
         }
 
@@ -143,6 +144,7 @@
         >p{
             line-height:1.7;
             font-weight: 100;
+            font-family: 'Overpass', sans-serif;
 
             @include breakpoint-down(large){
                 padding:0;
@@ -165,8 +167,12 @@
             @include breakpoint-down(small){
                 padding:0;
                 color:$white;
-                font-size: 1.1rem;
+                font-size: 1.27rem;
+                letter-spacing: 0.1px;
                 line-height:1.9;
+                color:$mobilenav;
+
+               
             }
         }
     }
@@ -176,10 +182,9 @@
 
 
 .article2{
-
-    padding-top: 5rem;
     position: relative;
     padding-right: 3rem;
+    font-family: 'Overpass', sans-serif;
 
     @include breakpoint-down(large){
         padding:0;
@@ -196,7 +201,7 @@
 
 
     &__content{
-        gap:6rem;
+        // gap:2rem;
 
         @include breakpoint-down(large){
             display:block;
@@ -214,12 +219,14 @@
 
     &__image{
             // width: 50%;
-            margin-left: -20.8rem;
+            margin-left: -14.8rem;
+
             width: 100%;
             height: 100%;
+            flex-basis:50%;
 
             >img{
-                width: 1200px;
+                width: 800px;
             }
 
             @include breakpoint-down(large){
@@ -261,8 +268,9 @@
 
     &__text{
 
-        margin-top: -3rem;
+        margin-top: 3rem;
         padding-right:10rem;
+        flex-basis:50%;
         
 
         @include breakpoint-down(large){
@@ -295,13 +303,13 @@
 
 
         >div:first-child{
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
 
             h2{
-                margin-bottom: 1rem;
-                font-size:2.7rem;
+                font-size:2rem;
                 font-weight: 300;
                 color: $veryDarkBlueHeading;
+                font-family: 'Ubuntu', sans-serif; 
 
                 @include breakpoint-down(medium){
                     margin-bottom: 3rem;
@@ -315,11 +323,11 @@
             }
 
             p{
-                margin-top: 2.5rem;
+                margin-top: 1rem;
                 line-height: 1.7;
-                font-size: 1.4rem;
+                font-size: 0.9rem;
                 color: $veryDarkBlueHeading;
-                font-weight: 300;
+                font-weight: 600;
                 color:grey;
 
                 @include breakpoint-down(large){
@@ -332,21 +340,22 @@
                     font-size:1.3rem;
                     margin-bottom: 2rem;
                     line-height: 1.6;
-
-                    font-weight:400;
+                    font-weight:500;
+                    color:grey;
                 }
             }
         }
 
 
         >div:last-child{
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
 
             h2{
-                font-size:2.7rem;
+                font-size:2.2rem;
                 font-weight: 300;
                 margin-bottom: 1rem;
                 color: $veryDarkBlueHeading;
+                font-family: 'Ubuntu', sans-serif; 
 
                 @include breakpoint-down(small){
                     font-size:1.6rem;
@@ -356,12 +365,12 @@
 
 
             p{
-                margin-top: 2.5rem;
+                margin-top: 1rem;
                 line-height: 1.7;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 color: $veryDarkBlueHeading;
-                font-weight: 300;
                 color:gray;
+                font-weight: 500;
             }
         }
     }

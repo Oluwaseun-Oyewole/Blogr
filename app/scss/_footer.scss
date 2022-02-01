@@ -1,6 +1,8 @@
 .footer{ 
+    font-family: 'Overpass', sans-serif;
+    
     &__contain{
-        margin-top: 7rem;
+        margin-top: 5rem;
         padding-top:7rem;
         padding-bottom:2rem;
         padding-left: 8rem;
@@ -13,11 +15,6 @@
             grid-gap: 2rem;
         }
 
-
-        // @include breakpoint-down(medium){
-        //     grid-template-columns: 2fr 2fr 2fr 2fr;
-        //     grid-gap: 1rem;
-        // }
 
 
         @include breakpoint-down(small){
@@ -33,8 +30,8 @@
 
         >div{
             >h3{
-                margin-bottom: 4rem;
-                font-size: 1.5rem;
+                margin-bottom: 3rem;
+                font-size: 1.2rem;
 
 
                 @include breakpoint-down(large){
@@ -49,12 +46,12 @@
             }
 
             a{
-                margin-bottom: 1.5rem;
-                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                font-size: 1rem;
                 color:$grayishFooterText;
 
                 @include breakpoint-down(small){
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
 
                 &:hover{
@@ -93,7 +90,6 @@
         }
 
        img{
-        width: 130px;
         margin-top: -0.7rem;
 
         @include breakpoint-down(small){
