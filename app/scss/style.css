@@ -1140,7 +1140,7 @@ body.noscroll {
 
 @media (max-width: 57.5em) {
   .article2__text > div:first-child p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
     line-height: 1.6;
     font-weight: 500;
