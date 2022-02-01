@@ -667,8 +667,8 @@ body.noscroll {
 }
 
 .section__content > div:first-child {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
   padding-top: 8rem;
   margin-bottom: 2rem;
   padding-left: 2rem;
@@ -732,12 +732,12 @@ body.noscroll {
 }
 
 .section__content > div:first-child p {
-  line-height: 2;
-  font-size: 0.9rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
   color: #3f4164;
   font-family: 'Overpass', sans-serif;
-  font-weight: 600;
-  width: 100%;
+  font-weight: 500;
+  color: grey;
 }
 
 @media (max-width: 87.4375em) {
@@ -873,7 +873,7 @@ body.noscroll {
 .article__text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  font: size 1rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 87.4375em) {
@@ -1096,7 +1096,7 @@ body.noscroll {
 
 .article2__text > div:first-child h2 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #1f3f5b;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -1118,10 +1118,15 @@ body.noscroll {
 .article2__text > div:first-child p {
   margin-top: 1rem;
   line-height: 1.7;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #1f3f5b;
-  font-weight: 600;
+  font-weight: 500;
   color: grey;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #1f3f5b;
+  color: gray;
+  font-weight: 500;
 }
 
 @media (max-width: 87.4375em) {
@@ -1146,8 +1151,8 @@ body.noscroll {
 }
 
 .article2__text > div:last-child h2 {
-  font-size: 2.2rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 1rem;
   color: #1f3f5b;
   font-family: 'Ubuntu', sans-serif;
@@ -1163,7 +1168,7 @@ body.noscroll {
 .article2__text > div:last-child p {
   margin-top: 1rem;
   line-height: 1.7;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #1f3f5b;
   color: gray;
   font-weight: 500;

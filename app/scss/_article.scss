@@ -89,7 +89,7 @@
 
     &__text{
         flex-basis:50%;
-        font: size 1rem;
+        font-size: 1rem;
 
 
         @include breakpoint-down(large){
@@ -307,7 +307,7 @@
 
             h2{
                 font-size:2rem;
-                font-weight: 300;
+                font-weight: 400;
                 color: $veryDarkBlueHeading;
                 font-family: 'Ubuntu', sans-serif; 
 
@@ -325,10 +325,18 @@
             p{
                 margin-top: 1rem;
                 line-height: 1.7;
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 color: $veryDarkBlueHeading;
-                font-weight: 600;
+                font-weight: 500;
                 color:grey;
+
+
+
+                line-height: 1.7;
+                font-size: 1.1rem;
+                color: $veryDarkBlueHeading;
+                color:gray;
+                font-weight: 500;
 
                 @include breakpoint-down(large){
                     margin-bottom: 3rem;
@@ -351,8 +359,8 @@
             margin-bottom: 2rem;
 
             h2{
-                font-size:2.2rem;
-                font-weight: 300;
+                font-size:2rem;
+                font-weight: 400;
                 margin-bottom: 1rem;
                 color: $veryDarkBlueHeading;
                 font-family: 'Ubuntu', sans-serif; 
@@ -367,7 +375,7 @@
             p{
                 margin-top: 1rem;
                 line-height: 1.7;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 color: $veryDarkBlueHeading;
                 color:gray;
                 font-weight: 500;
